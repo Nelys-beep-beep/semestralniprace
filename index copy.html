@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billie Eilish | fanpage</title>
+    <link rel="shortcut icon" href="/favicon-96x96.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f0f0f0;
+            display: flex;
+            min-height: 100vh;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        /* --- LEVÝ MENU PANEL --- */
+        .sidebar {
+            width: 260px;
+            background-color: #222;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            border-radius: 12px;
+            border: 2px solid #333;
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 2;
+        }
+
+        .nav-btn {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 12px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        .nav-btn:hover {
+            background-color: #283593;
+        }
+
+        .nav-title {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            font-size: 18px;
+            color: #666;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .contacts-box {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            z-index: 2;
+            margin-top: auto;
+        }
+
+        /* --- HLAVNÍ OBSAH VPRAVO --- */
+        .main-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Horní část: fotka alba */
+        .header-section {
+            height: 320px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #333;
+        }
+
+        .header-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Přechodový proužek z modré do černa */
+        .gradient-strip {
+            height: 35px;
+            background: linear-gradient(to bottom, #0099ff, #0b0b0b);
+            border-radius: 4px;
+        }
+
+        /* Spodní textová část */
+        .text-section {
+            background: linear-gradient(135deg, #0088ee, #0044aa);
+            flex-grow: 1;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #333;
+            color: #fff;
+        }
+
+        .text-section h1 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .text-section h2 {
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #e0f7fa;
+        }
+
+        .bio-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .bio-list li u {
+            color: #b3e5fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .songs-list {
+            list-style-type: circle;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .text-section p {
+            margin: 15px 0;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        mark {
+            background-color: #0b0b0b;
+            color: #00bcd4;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Levý panel -->
+    <aside class="sidebar">
+        <div class="nav-links">
+            <a href="#" class="nav-btn">info</a>
+            <a href="#" class="nav-btn">songy</a>
+            <a href="#" class="nav-btn">eshop</a>
+        </div>
+        <div class="nav-title">menu</div>
+        <div class="contacts-box">kontakty</div>
+    </aside>
+
+    <!-- Pravá část -->
+    <main class="main-container">
+        
+        <!-- Fotka alba -->
+        <section class="header-section">
+            <img src="image_977470.jpg" alt="Billie Eilish - Hit Me Hard And Soft">
+        </section>
+        
+        <!-- Plynulý přechod -->
+        <div class="gradient-strip"></div>
+
+        <!-- Hlavní text -->
+        <section class="text-section">
+            <h1>Billie Eilish 🤍</h1>
+            
+            <ul class="bio-list">
+                <li><u>Celé jméno:</u> Billie Eilish Pirate Baird O'Connell</li>
+                <li><u>Narozena:</u> 18. prosince 2001</li>
+                <li><u>Místo narození:</u> Los Angeles, Kalifornie, USA</li>
+                <li><u>Povolání:</u> zpěvačka a skladatelka</li>
+                <li><u>Hudební styl:</u> pop, alternativní pop, elektronická hudba</li>
+                <li><u>Bratr:</u> Finneas O'Connell (píše s ní a produkuje absolutně bangers hudbu!)</li>
+            </ul>
+
+            <p>Billie se stala ikonou už jako úplně mladá, když nazpívala „Ocean Eyes“ se svým bráchou Finneasem. Song se hned uchytil na netu a odpálil její kariéru do vesmíru.</p>
+
+            <h2>Alba, která prostě musíš znát</h2>
+            <ul class="bio-list">
+                <li>When We All Fall Asleep, Where Do Go? — <mark>2019</mark></li>
+                <li>Happier Than Ever — <mark>2021</mark></li>
+                <li>Hit Me Hard and Soft — <mark>2024</mark></li>
+            </ul>
+
+            <h2>Nejlepší songy (můj výběr) ✨</h2>
+            <ul class="songs-list">
+                <li>Bad Guy</li>
+                <li>Ocean Eyes</li>
+                <li>Bury a Friend</li>
+                <li>Everything I Wanted</li>
+                <li>Therefore I Am</li>
+                <li>Happier Than Ever</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
